@@ -1,0 +1,9 @@
+This is a record of all the tests performed on the implementation of the hashMap to verify it is in working order!
+
+-----------------
+Dates Performed:
+-----------------
+-----------------
+
+
+Test Suite Description:
