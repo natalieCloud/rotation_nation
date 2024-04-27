@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/rotation_nation_test_map.dir/hashMap/tests/main.c.o CMakeFiles/rotation_nation_test_map.dir/hashMap/hashMap.c.o -o rotation_nation_test_map

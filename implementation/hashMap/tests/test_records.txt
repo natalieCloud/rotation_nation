@@ -3,7 +3,24 @@ This is a record of all the tests performed on the implementation of the hashMap
 -----------------
 Dates Performed:
 -----------------
+4-27-24
 -----------------
 
 
 Test Suite Description:
+------------------------
+
+
+This test suite contains at least three for each of the following methods:
+
+hashKey
+contains
+getValue
+insert
+delete
+
+The test cases are designed to cover an edge case, standard, and at least one false check!
+
+
+Note - currently the way the test cases have been set up do not allow for testing with valgrind 
+This line will be removed when the issue is resolved through the use of an additiona test suite setup.

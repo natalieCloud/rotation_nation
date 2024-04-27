@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named testing
+# Target rules for targets named rotation_nation_test_map
 
 # Build rule for target.
-testing: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testing
-.PHONY : testing
+rotation_nation_test_map: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rotation_nation_test_map
+.PHONY : rotation_nation_test_map
 
 # fast build rule for target.
-testing/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/build
-.PHONY : testing/fast
+rotation_nation_test_map/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotation_nation_test_map.dir/build.make CMakeFiles/rotation_nation_test_map.dir/build
+.PHONY : rotation_nation_test_map/fast
 
 hashMap/hashMap.o: hashMap/hashMap.c.o
 .PHONY : hashMap/hashMap.o
 
 # target to build an object file
 hashMap/hashMap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/hashMap/hashMap.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotation_nation_test_map.dir/build.make CMakeFiles/rotation_nation_test_map.dir/hashMap/hashMap.c.o
 .PHONY : hashMap/hashMap.c.o
 
 hashMap/hashMap.i: hashMap/hashMap.c.i
@@ -142,7 +142,7 @@ hashMap/hashMap.i: hashMap/hashMap.c.i
 
 # target to preprocess a source file
 hashMap/hashMap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/hashMap/hashMap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotation_nation_test_map.dir/build.make CMakeFiles/rotation_nation_test_map.dir/hashMap/hashMap.c.i
 .PHONY : hashMap/hashMap.c.i
 
 hashMap/hashMap.s: hashMap/hashMap.c.s
@@ -150,7 +150,7 @@ hashMap/hashMap.s: hashMap/hashMap.c.s
 
 # target to generate assembly for a file
 hashMap/hashMap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/hashMap/hashMap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotation_nation_test_map.dir/build.make CMakeFiles/rotation_nation_test_map.dir/hashMap/hashMap.c.s
 .PHONY : hashMap/hashMap.c.s
 
 hashMap/tests/main.o: hashMap/tests/main.c.o
@@ -158,7 +158,7 @@ hashMap/tests/main.o: hashMap/tests/main.c.o
 
 # target to build an object file
 hashMap/tests/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/hashMap/tests/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotation_nation_test_map.dir/build.make CMakeFiles/rotation_nation_test_map.dir/hashMap/tests/main.c.o
 .PHONY : hashMap/tests/main.c.o
 
 hashMap/tests/main.i: hashMap/tests/main.c.i
@@ -166,7 +166,7 @@ hashMap/tests/main.i: hashMap/tests/main.c.i
 
 # target to preprocess a source file
 hashMap/tests/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/hashMap/tests/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotation_nation_test_map.dir/build.make CMakeFiles/rotation_nation_test_map.dir/hashMap/tests/main.c.i
 .PHONY : hashMap/tests/main.c.i
 
 hashMap/tests/main.s: hashMap/tests/main.c.s
@@ -174,7 +174,7 @@ hashMap/tests/main.s: hashMap/tests/main.c.s
 
 # target to generate assembly for a file
 hashMap/tests/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/hashMap/tests/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotation_nation_test_map.dir/build.make CMakeFiles/rotation_nation_test_map.dir/hashMap/tests/main.c.s
 .PHONY : hashMap/tests/main.c.s
 
 # Help Target
@@ -185,7 +185,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... testing"
+	@echo "... rotation_nation_test_map"
 	@echo "... hashMap/hashMap.o"
 	@echo "... hashMap/hashMap.i"
 	@echo "... hashMap/hashMap.s"

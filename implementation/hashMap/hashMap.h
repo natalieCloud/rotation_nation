@@ -16,12 +16,17 @@ struct hEntry {  /* Hash table entries */
 
 static struct hEntry *hashTable[HASHSIZE]; /* Hash Table */
 
+static int hSize = 0; /* Number of entries in the map */
 
 int hashKey(int key); /* Hashes the key to the appropriate bucket. Simple mod based hash. returns bucket number, -1 if invalid. */
 
 int contains(int key); /* Checks to see if the key requested is contained within the hash map. returns an int if so. */
 
-int insert(int key, void *value); /* Inserts the hash entry to the appropriate bucket. Returns int sucess */
+void* getValue(int key); /* Searches the table for the entry defined by the key, and returns a pointer to its value. */
+
+int insert(int key, void *value); /* Inserts the hash entry to the appropriate bucket. Returns int sucess. Does not allow duplicates */
 
 int deleteEntry(int key); /* Deletes the hash entry from the table. Returns an int indicating sucess. */
+
+int size(); /* returns the number of elements in the hashMap */
 
