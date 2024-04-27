@@ -5,6 +5,7 @@
 \semester{2024}
 \date{\today}
 
+\usepackage{amssymb}
 \usepackage{tikz}
 \tikzset{
   LabelStyle/.style = { rectangle, rounded corners, draw,
@@ -24,7 +25,15 @@ mystyle/.style={
   align=center,
   draw=black,
   fill=white
-  }
+  },
+invis/.style={
+    circle,
+    inner sep=0pt,
+    text width=6mm,
+    align=center,
+    draw=white,
+    fill=white
+}
 }
 
 
@@ -44,13 +53,67 @@ mystyle/.style={
 
 \subsection*{Background and Assumptions} \\
 
+\noindent For the sake of simplification, any values in the binary search tree will be values in $\mathbb{Z}$, and will use standard ordering. While there may be an additional proof \cite{HERE} about finding the minimum number of rotations given duplicate elements in the trees, for this problem we will consider duplicates to be invalid. \\
+
+\noindent The right and left rotations will be performed as followed: \\
+
+
 \begin{center}
+
+Right Rotate on \{x\}
+
 \begin{tikzpicture}
 \small
     \node[mystyle] (1) at (-3, 0) {p};
     \node[mystyle] (2) at (3, 0)  {p};
-    \draw (1) edge[out=30,in=150,looseness=0.2] (2);
+    \node[invis] (3) at (-2, 0) {};
+    \node[invis] (4) at (2, 0) {};
+    \node[invis] (5) at (-3, 1) {};
+    \node[invis] (6) at (3, 1) {};
+    
+    \node[mystyle] (7) at (-3, -1.25) {x};
+    \node[mystyle] (8) at (3, -1.25) {y};
+    
+    \node[mystyle] (9) at (-3.75, -2.50) {y};
+    \node[invis] (10) at (-2.25, -2.50) {c};
+    
+    \node[invis] (11) at (-4.5, -3.75) {a};
+    \node[invis] (12) at (-3, -3.75) {b};
+    
+    \node[mystyle] (13) at (3.75, -2.50) {x};
+    \node[invis] (14) at (2.25, -2.50) {a};
+
+    \node[invis] (15) at (4.5, -3.75) {c};
+    \node[invis] (16) at (3, -3.75) {b};
+
+    \node[invis] (17) at (-2, -4) {};
+    \node[invis] (18) at (2, -4) {};
+    
+    
+    \draw[->] (3) edge[out=30,in=150,looseness=1] (4);
+    \draw[->] (18) edge[out=210, in=330, looseness=1] (17);
+    
+    \draw (1) edge[out = 90, in=270] (5);
+    \draw (2) edge[out = 90, in=270] (6);
+    \draw (1) edge[out = 270, in=90] (7);
+    \draw (2) edge[out = 270, in=90] (8);
+
+    \draw (7) edge[out=240, in=60] (9);
+    \draw (7) edge[out=300, in=120] (10);
+
+    \draw (9) edge[out=240, in=60] (11);
+    \draw (9) edge[out=300, in=120] (12);
+
+    \draw (8) edge[out=240, in=60] (14);
+    \draw (8) edge[out=300, in=120] (13);
+
+    \draw (13) edge[out=240, in=60] (16);
+    \draw (13) edge[out=300, in=120] (15);
+
+    
 \end{tikzpicture}
+
+Left Rotate on \{y\}
 \end{center}
 
 
