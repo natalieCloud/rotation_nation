@@ -12,12 +12,14 @@ struct hEntry {  /* Hash table entries */
     struct hEntry *next;
     int key;
     void *value;
-}
+};
 
 static struct hEntry *hashTable[HASHSIZE]; /* Hash Table */
 
 
-int hashKey(int key); /* Hashes the key to the appropriate bucket. Simple mod based hash. */
+int hashKey(int key); /* Hashes the key to the appropriate bucket. Simple mod based hash. returns bucket number, -1 if invalid. */
+
+int contains(int key); /* Checks to see if the key requested is contained within the hash map. returns an int if so. */
 
 int insert(int key, void *value); /* Inserts the hash entry to the appropriate bucket. Returns int sucess */
 

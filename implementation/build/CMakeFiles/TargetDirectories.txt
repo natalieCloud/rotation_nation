@@ -1,0 +1,3 @@
+/home/nataliechmura/work/rotation_nation/implementation/build/CMakeFiles/testing.dir
+/home/nataliechmura/work/rotation_nation/implementation/build/CMakeFiles/edit_cache.dir
+/home/nataliechmura/work/rotation_nation/implementation/build/CMakeFiles/rebuild_cache.dir
