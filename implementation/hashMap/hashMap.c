@@ -82,3 +82,18 @@ int deleteEntry(int key) {
 int size() {
     return hSize;
 }
+
+void clearHash() {
+    int i;
+    struct hEntry *hPtr;
+    struct hEntry *cPtr;
+
+    for (i = 0; i < HASHSIZE; i++) {
+        hPtr = hashTable[i];
+        while (hPtr != NULL) {
+            cPtr = hPtr;
+            hPtr = hPtr->next;
+            free(cPtr);
+        }
+    }
+}

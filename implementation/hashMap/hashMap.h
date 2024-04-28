@@ -30,3 +30,5 @@ int deleteEntry(int key); /* Deletes the hash entry from the table. Returns an i
 
 int size(); /* returns the number of elements in the hashMap */
 
+void clearHash(); /* Clears and frees any memeory the table has allocated. Returns a boolean sucess */
+

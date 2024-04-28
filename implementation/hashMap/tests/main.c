@@ -231,5 +231,7 @@ TEST("TestGetValue1") {
     assert(s == size());
 }
 
+clearHash();
+
 
 END_TESTING
