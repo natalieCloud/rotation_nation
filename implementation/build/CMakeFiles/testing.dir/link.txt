@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/testing.dir/hashMap/tests/main.c.o CMakeFiles/testing.dir/hashMap/hashMap.c.o -o testing

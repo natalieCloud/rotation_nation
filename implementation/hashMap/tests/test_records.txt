@@ -3,7 +3,35 @@ This is a record of all the tests performed on the implementation of the hashMap
 -----------------
 Dates Performed:
 -----------------
+4-27-24 Test Suite #1
+4-28-24 valgrind
 -----------------
 
 
 Test Suite Description:
+------------------------
+
+
+This test suite contains at least three for each of the following methods:
+
+hashKey
+contains
+getValue
+insert
+delete
+
+The test cases are designed to cover an edge case, standard, and at least one false check!
+
+4-28-24 Valgrind results:
+----------------------------------------------------------------
+
+HEAP SUMMARY:
+    in use at exit: 0 bytes in 0 blocks
+  total heap usage: 9 allocs, 9 frees, 216 bytes allocated
+
+All heap blocks were freed -- no leaks are possible
+
+For lists of detected and suppressed errors, rerun with: -s
+ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+----------------------------------------------------------------
+
